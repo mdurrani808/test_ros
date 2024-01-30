@@ -38,7 +38,6 @@ ament_target_dependencies(
 # which is appropriate when building the dll but not consuming it.
 target_compile_definitions(urc_hw PRIVATE "urc_hw_BUILDING_LIBRARY")
 pluginlib_export_plugin_description_file(hardware_interface urc_hw.xml)
-target_link_libraries(myactuator_rmd ${MYACTUATOR_RMD_LIBRARIES})
 install(
     DIRECTORY include/
     DESTINATION include
